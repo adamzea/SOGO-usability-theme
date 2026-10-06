@@ -3,7 +3,7 @@ A theme for improving the usability of a SOGO groupware web client.  It will inc
 
 ![Screenshot](SOGO-usability-theme.png)
 
-This is for Sogo version 5.12.9. It uses Aria-labels for most button labels but has some work-arounds for the aria-label bugs and inconsistencies in version 5.12.9's code. Also, some aria-labels are too verbose, so this theme replaces them with simpler terms. Thusly, it really only works for the English language. Other languages would need better translations in the theme code (or within SOGO itself). 
+This is for Sogo version 5.12.9. It uses Aria-labels for most button labels but has some work-arounds for the [aria-label bugs](https://www.mail-archive.com/users%40sogo.nu/msg34676.html) and inconsistencies in version 5.12.9's code. Also, some aria-labels are too verbose, so this theme replaces them with simpler terms. Thusly, it really only works for the English language. Other languages would need better translations in the theme code (or within SOGO itself). 
 
 ## Installation
 [Mailcow SOGO Theme instructions](https://github.com/mailcow/mailcow-dockerized-docs/blob/master/docs/manual-guides/SOGo/u_e-sogo.en.md)
