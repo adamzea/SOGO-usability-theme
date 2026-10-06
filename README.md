@@ -7,7 +7,10 @@ This is for Sogo version 5.12.9. It uses Aria-labels for most button labels but 
 
 ## Installation
 [Mailcow SOGO Theme instructions](https://github.com/mailcow/mailcow-dockerized-docs/blob/master/docs/manual-guides/SOGo/u_e-sogo.en.md)
-- Edit your Sogo theme file using: sudo nano data/conf/sogo/custom-theme.js
+- Edit your Sogo theme file using:
+  ``` bash
+  sudo nano data/conf/sogo/custom-theme.js
+  ```
 - Add the CSS from this repository's custom-theme.js file. 
 - Restart SOGO to load the new CSS: 
 ``` bash
