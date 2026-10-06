@@ -5,7 +5,14 @@ A theme for improving the usability of a SOGO groupware web client.  It will inc
 
 This is for Sogo version 5.12.9. It uses Aria-labels for most button labels but has some work-arounds for the aria-label bugs and inconsistencies in version 5.12.9's code. Also, some aria-labels are too verbose, so this theme replaces them with simpler terms. Thusly, it really only works for the English language. Other languages would need better translations in the theme code (or within SOGO itself). 
 
-
+## Installation
+[Mailcow SOGO Theme instructions](https://github.com/mailcow/mailcow-dockerized-docs/blob/master/docs/manual-guides/SOGo/u_e-sogo.en.md)
+Edit your Sogo theme file using: sudo nano data/conf/sogo/custom-theme.js
+Add the CSS from this repository's custom-theme.js file. 
+Restart SOGO to load the new CSS: 
+``` bash
+docker-compose restart memcached-mailcow sogo-mailcow
+```
 
 ## Why we should fix mystery meat navigation
 There are many studies that show how text labels on interactive elements improve the "easy to learn" and "easy to use" aspects of interaction design. 
