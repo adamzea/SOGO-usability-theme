@@ -7,9 +7,9 @@ This is for Sogo version 5.12.9. It uses Aria-labels for most button labels but 
 
 ## Installation
 [Mailcow SOGO Theme instructions](https://github.com/mailcow/mailcow-dockerized-docs/blob/master/docs/manual-guides/SOGo/u_e-sogo.en.md)
-Edit your Sogo theme file using: sudo nano data/conf/sogo/custom-theme.js
-Add the CSS from this repository's custom-theme.js file. 
-Restart SOGO to load the new CSS: 
+- Edit your Sogo theme file using: sudo nano data/conf/sogo/custom-theme.js
+- Add the CSS from this repository's custom-theme.js file. 
+- Restart SOGO to load the new CSS: 
 ``` bash
 docker-compose restart memcached-mailcow sogo-mailcow
 ```
@@ -23,9 +23,7 @@ There are many studies that show how text labels on interactive elements improve
 - [Icon usability](https://www.nngroup.com/articles/icon-usability/)
 - [Do icons need labels?](https://uxdesign.cc/do-icons-need-labels-6cb4f4282c00)
 - [The Obvious UI is Often the Best UI](https://medium.com/google-design/the-obvious-ui-is-often-the-best-ui-7a25597d79fd)
-- [Introduction to Mystery Meat Navigation](http://www.webpagesthatsuck.com/mysterymeatnavigation.html)  
-  ([2](https://web.archive.org/web/20000816204508/http://www.websitesthatsuck.com/badnavigation.html))  
-  ([3](https://web.archive.org/web/20060312005922/http://www.webpagesthatsuck.com/mysterymeatnavigation.html))
+- [Introduction to Mystery Meat Navigation](http://www.webpagesthatsuck.com/mysterymeatnavigation.html)  ([2](https://web.archive.org/web/20000816204508/http://www.websitesthatsuck.com/badnavigation.html))  ([3](https://web.archive.org/web/20060312005922/http://www.webpagesthatsuck.com/mysterymeatnavigation.html))
 
 ---
 
