@@ -110,10 +110,9 @@
 
 
 /* =========================================================
-   BUTTON LABELS (your original layout rules)
+   BUTTON LABELS 
    ========================================================= */
 
-/* add labels to buttons */
 /* new compose button */
 /* Make room for the label and lay out icon + text horizontally */
 md-fab-speed-dial .md-fab.md-button {
