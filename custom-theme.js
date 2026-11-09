@@ -9,8 +9,6 @@
     style.innerHTML = `
 
 
-
-
 /* BEGIN custom CSS */
 
 /* =========================================================
@@ -110,9 +108,10 @@
 
 
 /* =========================================================
-   BUTTON LABELS 
+   BUTTON LABELS (your original layout rules)
    ========================================================= */
 
+/* add labels to buttons */
 /* new compose button */
 /* Make room for the label and lay out icon + text horizontally */
 md-fab-speed-dial .md-fab.md-button {
@@ -423,6 +422,9 @@ form[name="messageForm"] .material-icons:after {
 .md-button[aria-label^="Next "]:after { content: "Next"; }
 .md-button[aria-label="Multicolumn Day View"]:after { content: "Columns"; }
 .md-button[aria-label="More options"]:after { content: "More"; }
+/* calendar Properties dialog: the color-picker button has no real
+   aria-label (SOGo writes it as "label:aria-label"), so give it one */
+.md-button[label\:aria-label="Options"]:after { content: "Color"; }
 /* "TODAY" is already a word - no extra label (the small-screen
    arrow-icon version of the button keeps its label) */
 .md-button[aria-label="Today"]:not(.md-icon-button):after {
@@ -523,19 +525,20 @@ md-tabs .md-tab.md-active,
 md-toast .md-toast-content .md-button.md-highlight:not(.md-primary):not(.md-warn) {
   color: var(--sg-green) !important;
 }
-/* accent: fills */
+/* accent: fills (calendar on/off switches keep their own calendar
+   color via SOGo's .md-switch-folder... classes) */
 md-tabs md-ink-bar,
 md-nav-bar md-nav-ink-bar,
 md-checkbox.md-checked:not(.md-primary):not(.md-warn):not(.sg-folder) .md-icon,
 md-radio-button:not(.md-primary):not(.md-warn) .md-on,
-md-switch.md-checked:not([disabled]):not(.md-primary):not(.md-warn) .md-thumb,
+md-switch.md-checked:not([disabled]):not(.md-primary):not(.md-warn):not([class*="md-switch-folder"]) .md-thumb,
 md-slider:not(.md-primary):not(.md-warn) .md-track.md-track-fill,
 md-slider:not(.md-primary):not(.md-warn) .md-thumb::after,
 md-slider:not(.md-primary):not(.md-warn) .md-sign,
 md-progress-linear.md-accent .md-bar {
   background-color: var(--sg-green) !important;
 }
-md-switch.md-checked:not([disabled]):not(.md-primary):not(.md-warn) .md-bar {
+md-switch.md-checked:not([disabled]):not(.md-primary):not(.md-warn):not([class*="md-switch-folder"]) .md-bar {
   background-color: color-mix(in srgb, var(--sg-green) 50%, transparent) !important;
 }
 md-progress-circular.md-accent path { stroke: var(--sg-green) !important; }
@@ -1112,4 +1115,5 @@ md-checkbox.md-checked:not(.sg-folder) .md-icon::after,
   }
 })();
  */
+
 
