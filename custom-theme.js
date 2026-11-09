@@ -9,6 +9,7 @@
     style.innerHTML = `
 
 
+
 /* BEGIN custom CSS */
 
 /* =========================================================
@@ -423,8 +424,9 @@ form[name="messageForm"] .material-icons:after {
 .md-button[aria-label="Multicolumn Day View"]:after { content: "Columns"; }
 .md-button[aria-label="More options"]:after { content: "More"; }
 /* calendar Properties dialog: the color-picker button has no real
-   aria-label (SOGo writes it as "label:aria-label"), so give it one */
-.md-button[label\:aria-label="Options"]:after { content: "Color"; }
+   aria-label, so give it one (no backslashes here: the mailcow
+   CSS editor strips them, which breaks the rule) */
+.md-button[ng-click*="showPicker"]:after { content: "Color"; }
 /* "TODAY" is already a word - no extra label (the small-screen
    arrow-icon version of the button keeps its label) */
 .md-button[aria-label="Today"]:not(.md-icon-button):after {
@@ -1068,7 +1070,6 @@ md-checkbox.md-checked:not(.sg-folder) .md-icon::after,
 }
 
 /* END custom CSS */
-
 
 
 
