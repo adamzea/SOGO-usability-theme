@@ -9,7 +9,6 @@
     style.innerHTML = `
 
 
-
 /* BEGIN custom CSS */
 
 /* =========================================================
@@ -427,6 +426,8 @@ form[name="messageForm"] .material-icons:after {
    aria-label, so give it one (no backslashes here: the mailcow
    CSS editor strips them, which breaks the rule) */
 .md-button[ng-click*="showPicker"]:after { content: "Color"; }
+/* calendar-list reorder button: the label sits on its icon, not the button */
+.md-icon-button[ng-click*="toggleSortableMode"]:after { content: "Reorder"; }
 /* "TODAY" is already a word - no extra label (the small-screen
    arrow-icon version of the button keeps its label) */
 .md-button[aria-label="Today"]:not(.md-icon-button):after {
@@ -1070,6 +1071,7 @@ md-checkbox.md-checked:not(.sg-folder) .md-icon::after,
 }
 
 /* END custom CSS */
+
 
 
 
