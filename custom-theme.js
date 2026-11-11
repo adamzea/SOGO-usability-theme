@@ -718,6 +718,15 @@ md-sidenav .md-toolbar-tools.sg-toolbar-tools--dense {
   color: var(--sg-toolbar-text);
 }
 
+/* Search fields in the list header bar (Mail, Calendar, Contacts):
+   SOGo gives them a fixed near-white background, which put white
+   typed text on white in dark mode. Use the raised surface color. */
+md-toolbar.md-accent.md-hue-1:not(.md-menu-toolbar) md-input-container .md-input,
+md-toolbar.md-accent.md-hue-1:not(.md-menu-toolbar) md-autocomplete input {
+  background-color: var(--sg-surface-raised) !important;
+  color: var(--sg-text) !important;
+}
+
 /* "From" box in the new-message window: SOGo tints it pale teal;
    show it as a normal field on the toolbar instead */
 md-toolbar md-autocomplete.md-bg,
@@ -1073,8 +1082,6 @@ md-checkbox.md-checked:not(.sg-folder) .md-icon::after,
 /* END custom CSS */
 
 
-
-
     `;
 
     // Append to document head
@@ -1118,5 +1125,6 @@ md-checkbox.md-checked:not(.sg-folder) .md-icon::after,
   }
 })();
  */
+
 
 
